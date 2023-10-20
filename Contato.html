@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Contato</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <div id="menu_container"></div>
+  </header>
+
+  <section id="conteudo">
+    <h1>Mande uma Mensagem</h1>
+
+    <ul class="formularioBorder vertical">
+    <!-- Usuário -->
+    <li class="label_input list_item">
+      <label for="usuario">Nome</label>
+      <input type="text" name="nome" id="usuario" required>
+    </li>
+  
+    <!-- E-mail -->
+    <li class="label_input">
+      <label for="email">E-mail</label>
+    </li>
+  
+    <!-- Telefone -->
+    <li class="label_input">
+      <label for="phone">Telefone</label>
+      (99) 4002-8922
+    </li>
+  
+    <!-- Assunto -->
+    <li class="label_input">
+      <label for="assunto">Assunto</label>
+      <select name="assunto" required>
+        <option selected disabled>Selecione uma Opção</option>
+        <option value="reclamacao">Reclamação</option>
+        <option value="sugestao">Sugestão</option>
+      </select>
+    </li>
+  
+    <!-- Mensagem -->
+    <li class="label_input">
+      <label for="mensagem">Mensagem</label>
+      <textarea name="mensagem" required>Digite a Mensagem</textarea>
+    </li>
+  
+    <!-- Opções de Resposta -->
+    <li class="label_input">
+      <label>Opções de Resposta</label>
+      <div class="horizontal">
+        <label><input type="checkbox" value="email"> E-mail</label>
+        <label><input type="checkbox" value="telefone"> Telefone</label>
+      </div>
+    </li>
+  </ul>
+  
+    <!-- Botão Enviar -->
+    <div class="buttons">
+      <button type="submit">Enviar</button>
+    </div>
+  
+    <div id="footer_container"></div>
+  </section>
+  
+  <!-- Utilizado para carregar o Menu.html e o Footer na página -->
+  <script src="script.js"></script>
+</body>
+
+</html>

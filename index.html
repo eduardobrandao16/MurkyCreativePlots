@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Menu Superior -->
+  <header>
+    <div id="menu_container"></div>
+  </header>
+
+  <!-- Slide Carrossel -->
+  <div class="carrosel_container">
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 4</div>
+        <img src="https://github.com/DWBA4/dwba4_semana_imagens/blob/master/A.png?raw=true" alt="Slide 1">
+        <div class="text">Primeira Imagem</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 4</div>
+        <img src="https://github.com/DWBA4/dwba4_semana_imagens/blob/master/B.jpg?raw=true" alt="Slide 2">
+        <div class="text">Segunda Imagem</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 4</div>
+        <img src="https://github.com/DWBA4/dwba4_semana_imagens/blob/master/C.jpg?raw=true" alt="Slide 3">
+        <div class="text">Terceira Imagem</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <!-- Vídeo -->
+        <div class="video">
+          <h2>Conheça os Desafios de Inovação</h2>
+          <iframe width="500" height="300" src="https://www.youtube.com/embed/5g5LQe3m8Po"
+            title="Desafio de Inovação: webinar com executivos da empresa Sem Parar e representantes da Inova IFSP"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+        <div class="text">Quarta Imagem</div>
+      </div>
+
+      <!-- Botão Próximo e Anterior -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+  </div>
+  <!-- Dots -->
+  <div class="dots-container">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+
+  <div class="layout">
+    <div class="card">
+      <img src="https://github.com/DWBA4/dwba4_semana_imagens/blob/master/eleicoes.jpg?raw=true" alt="Card 1">
+      <h4>Radar IFSP Informe-se sobre as eleições do dia 13 de outubro</h4>
+      <p>Todos os alunos e servidores podem votar, acesse aqui a cabine de votação online do seu câmpus</p>
+    </div>
+
+    <div class="card">
+      <img src="https://github.com/DWBA4/dwba4_semana_imagens/blob/master/snct.jpg?raw=true" alt="Card 2">
+      <h4>IFSP: SNCT reúne atividades entre 19 e 24 de outubro</h4>
+      <p>Programação reunirá iniciativas para aproximar pesquisadores e atividades culturais</p>
+    </div>
+
+    <div class="card">
+      <img src="https://github.com/DWBA4/dwba4_semana_imagens/blob/master/residencia.png?raw=true" alt="Card 3">
+      <h4>IFSP oferece bolsa aos voluntários do Residência Pedagógica</h4>
+      <p>Bolsa de R$ 400,00 será paga pelo período de três meses</p>
+    </div>
+
+    <div class="card">
+      <img src="https://github.com/DWBA4/dwba4_semana_imagens/blob/master/maratona.jpeg?raw=true" alt="Card 4">
+      <h4>Inscrições abertas para a III Maratona InterIF</h4>
+      <p>Maratona de Programação do IFSP será realizada online, no dia 31 de outubro, inscrições até 26 de outubro</p>
+    </div>
+  </div>
+
+  <div id="footer_container"></div>
+
+  <!-- Utilizado para carregar o Menu.html e o Footer na página -->
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

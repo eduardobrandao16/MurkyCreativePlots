@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Eventos</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+  <header>
+    <div id="menu_container"></div>
+  </header>
+
+  <section id="conteudo">
+    <h1>Inscreva-se</h1>
+
+    <form class="formularioBorder">
+      <label for="evento">Evento</label>
+      <select name="evento">
+        <option selected disabled>Selecione uma Opção</option>
+        <option value="voe_sem_asas">Voe Sem Asas</option>
+        <option value="festa_junina">Festa Junina</option>
+        <option value="semana_tecnologia">Semana de Tecnologia</option>
+      </select>
+    </form>
+  
+    <form class="formularioBorder vertical">
+      <div class="label_input">
+        <label for="usuario">Usuário *</label>
+        <input type="text" name="usuario" id="usuario" required>
+      </div>
+      <div class="label_input">
+        <label for="senha">Senha *</label>
+        <input type="password" name="senha" id="senha" required>
+      </div>
+      <div class="label_input">
+        <label for="confirmaSenha">Confirme a Senha *</label>
+        <input type="password" name="confirmaSenha" id="confirmaSenha" required>
+      </div>
+    </form>
+  
+    <form class="formularioBorder vertical">
+      <div class="label_input">
+        <label for="nomeCompleto">Nome Completo *</label>
+        <input type="text" name="nomeCompleto" id="nomeCompleto" required>
+      </div>
+  
+      <div class="label_input">
+        <label for="email">E-mail *</label>
+        <input type="email" name="email" id="email" required>
+      </div>
+  
+      <div class="label_input">
+        <label for="phone">Celular *</label>
+        <input type="tel" name="phone" id="phone" required> (99) 4002-8922
+      </div>
+  
+      <div class="label_input">
+        <label for="corFavorita">Cor Favorita</label>
+        <input type="color" name="corFavorita" id="corFavorita">
+      </div>
+  
+      <div class="label_input">
+        <label for="gitUrl">Perfil no GitHub *</label>
+        <input type="url" name="gitUrl" id="gitUrl" required>
+      </div>
+  
+      <div class="formulario_interno_Border">
+        <label>Sexo</label>
+        <div class="horizontal">
+          <label><input type="radio" value="masculino" name="sexo"> Masculino</label>
+          <label><input type="radio" value="feminino" name="sexo"> Feminino</label>
+        </div>
+      </div>
+    </form>
+  
+    <!-- Botões -->
+    <div class="buttons">
+      <button type="submit">Inscrever</button>
+      <button type="button" onclick="limparFormulario()">Limpar</button>
+    </div>
+  </section>
+
+
+  <div id="footer_container"></div>
+
+  <!-- Utilizado para carregar o Menu.html e o Footer na página -->
+  <script src="script.js"></script>
+</body>
+
+</html>
